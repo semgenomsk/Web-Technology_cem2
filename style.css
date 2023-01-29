@@ -1,0 +1,153 @@
+/* селектор применяется ко всему  */
+* {
+    margin: 0;
+    padding: 0;
+    /* кнопки чтобы не дергались при наведении */
+    box-sizing: border-box;
+}
+
+/* селектор по тегу (без точки) */
+body {
+    background-color: #ccc;
+}
+
+/* селектор по классу (с точкой) */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+.title, .desc, .subtitle {
+    /* центоовка заголовка и параграфа */
+    text-align: center;    
+    margin-top: 50px;
+}
+
+/* меню */
+.nav {
+    margin-top: 30px;
+    /* возвращает кнопки в строчку */
+    display: flex;
+    /* растянулись кнопки на всю ширину */
+    justify-content: space-between;
+}
+
+.nav-link {
+    /* размер кнопки */
+    font-size: 35px;
+    /* жирный шрифт кнопки */
+    font-weight: bold;
+    /* цвет шрифта ссылок */
+    color: white;
+    /* убрать нижнее подчеркивание */
+    text-decoration: none;
+    /* отступ внутрениий */
+    padding: 10px;
+    /* фон кнопки */
+    background-color: rgb(134, 101, 148);
+    /* скругление кнопки */
+    border-radius: 15px;
+    /* строчно-блочные кнопки (в столбик) */
+    display: block; 
+    /* чтобы не прыгали кнопки (добавляет кнопкам прозрачные рамки)*/
+    border: 1px solid transparent; 
+}
+
+/* эффект наведения курсором на кнопку */
+.nav-link:hover, .nav-link_home {
+    border: 1px solid darkviolet;
+    color: darkviolet;
+    background-color: rgb(220, 191, 191);
+}
+
+/* каротчка товара */
+.item {
+    /* ширина карточки */
+    width: 263px;
+    /* рамка */
+    border: 1 px solid black;
+    /* округление краев карточки */
+    border-radius: 10px;
+}
+
+/* добавляем свойства к картинкам */
+.item-pic {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* сдвигаем контент */
+.content {
+    margin-top: 100px;
+}
+
+/* подключаем шрифт к классу */
+.subtitle, .title_desc, .title_sneakers {
+    font-family: 'Comfortaa', cursive;
+font-family: 'Sofia Sans', sans-serif;
+    font-size: 60px;
+}
+
+/* коробка внутри которой лежат все картинки */
+.item-box {
+    /* отодвинуть от заголовка */
+    margin-top: 50px;
+    /* встают в ряд */
+    display: flex;
+    /* перепрыгивают картинки вниз (если ширина эл превышает ширину контейнера) */
+    flex-wrap: wrap;
+    /* отделяет картинку одну от другой */
+    justify-content: space-between;
+
+}
+
+.item {
+    /* нижний отступ */
+    margin-bottom: 50px;
+}
+
+/* работа с ссылками */
+.item-link {
+    padding: 5px;
+    background-color: white;
+    display: block;
+    border-radius: 10px;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Sofia Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.sneakers, .title_sneakers, .title_desc {    
+    text-align: center;
+}
+
+.title_desc {
+    margin: 30px;
+
+}
+
+.prod_desc {
+    /* text-align: center; */    
+    margin-top: 100px;
+    width: 1200px; 
+    margin: 0 auto;
+    /* font-size: 15px; */
+    /* text-indent: 25px; */
+    
+}
+
+.nav-link_home {
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: block;
+    display: flex;
+    border: 1px solid transparent;
+    justify-content: space-between;
+    color: white;     
+    background-color: rgb(83, 83, 74);
+    text-decoration: none;
+    
+}
